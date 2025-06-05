@@ -4,11 +4,7 @@ public class Program
     public static int Solution(int startPosition, int stopPosition, int jumpDistance)
     {
         int distance = stopPosition - startPosition;
-        int jumps = distance / jumpDistance;
-        if (distance % jumpDistance != 0)
-        {
-            jumps++;
-        }
+        int jumps = (int)Math.Ceiling((double)distance / jumpDistance);
         return jumps;
     }
     public static int getNum(string sentence)
